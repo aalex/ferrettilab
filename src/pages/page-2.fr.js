@@ -1,13 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Layout from "../layouts/pt"
+import Layout from "../layouts/fr"
 
 const SecondPage = (props) => (
   <Layout location={props.location}>
     <div>
-      <h1>Oi da segunda pagina!</h1>
-      <p>Bem viando a pagina 2</p>
-      <Link to="/pt/">Voltar pro início</Link>
+      <h1>La page deux!</h1>
+      <p>Bienvenue page 2</p>
+      <Link to="/pt/">Retour</Link>
     </div>
   </Layout>
 )
