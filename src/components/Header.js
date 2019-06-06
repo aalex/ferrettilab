@@ -5,7 +5,7 @@ import SelectLanguage from './SelectLanguage';
 const Header = (props) => (
   <div
     style={{
-      background: 'rebeccapurple',
+      background: '#ffcc33',
       marginBottom: '1.45rem',
     }}
   >
@@ -20,7 +20,7 @@ const Header = (props) => (
         <Link
           to="/"
           style={{
-            color: 'white',
+            color: '#101010',
             textDecoration: 'none',
           }}
         >
@@ -33,3 +33,4 @@ const Header = (props) => (
 )
 
 export default Header;
+

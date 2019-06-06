@@ -15,5 +15,13 @@ module.exports = {
         useLangKeyLayout: true,
         prefixDefault: false,
       }
-    }],
+    },
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
+  ],
 }
