@@ -2,7 +2,9 @@ const languages = require('./src/data/languages');
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Ferretti Labs`,
+    github: 'https://github.com/cr-ste-justine',
+    siteUrl: 'cr-ste-justine.xyz',
     languages
   },
   plugins: [
@@ -16,6 +18,15 @@ module.exports = {
         prefixDefault: false,
       }
     },
+		`gatsby-plugin-sass`,
+		{
+			resolve: `gatsby-plugin-google-analytics`,
+			options: {
+				trackingId: 'UA-XXXXXXXX-X',
+				// Setting this parameter is optional (requried for some countries such as Germany)
+				anonymize: true
+			}
+		},
     `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,

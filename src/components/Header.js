@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import SelectLanguage from './SelectLanguage';
+import GitHubLink from './GitHubLink';
 
 const Header = (props) => (
   <div
@@ -24,11 +25,12 @@ const Header = (props) => (
             textDecoration: 'none',
           }}
         >
-          Gatsby
+          Ferretti Labs
         </Link>
       </h1>
       <SelectLanguage langs={props.langs} />
     </div>
+    <GitHubLink />
   </div>
 )
 
