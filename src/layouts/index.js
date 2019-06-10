@@ -1,3 +1,6 @@
+/**
+ * @file Layout for the common part of all pages for this site.
+ */
 import React from 'react'
 import PropTypes from 'prop-types'
 import Header from '../components/Header'
@@ -28,7 +31,9 @@ const Layout = ({ children, location, i18nMessages }) => {
         const { langs, defaultLangKey } = data.site.siteMetadata.languages;
         const langKey = getCurrentLangKey(langs, defaultLangKey, url);
         const homeLink = `/${langKey}`.replace(`/${defaultLangKey}/`, '/');
-        const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url)).map((item) => ({ ...item, link: item.link.replace(`/${defaultLangKey}/`, '/') }));
+        /* FIXME: The links for the language switcher should preserve the current page
+         */
+        const languagesForMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url)).map((item) => ({ ...item, link: item.link.replace(`/${defaultLangKey}/`, '/') }));
         return (
           <IntlProvider
             locale={langKey}
@@ -38,11 +43,11 @@ const Layout = ({ children, location, i18nMessages }) => {
               <Helmet
                 title="Ferretti Labs"
                 meta={[
-                  { name: 'description', content: 'Sample' },
-                  { name: 'keywords', content: 'sample, something' },
+                  { name: 'description', content: 'Ferretti Labs - Groupe de recherche du docteur Vincent Ferretti' },
+                  { name: 'keywords', content: 'genomics, big data, cancer, infrastructure' },
                 ]}
               />
-              <Header langs={langsMenu} />
+              <Header langs={languagesForMenu} currentLanguage={langKey} />
               <div
                 style={{
                   margin: '0 auto',
@@ -65,4 +70,5 @@ Layout.propTypes = {
   children: PropTypes.func,
 }
 
-export default Layout
+export default Layout;
+

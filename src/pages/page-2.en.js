@@ -1,8 +1,11 @@
+/**
+ * @file Contents of the "careers" page - in English.
+ */
 import React from 'react'
 import Link from 'gatsby-link'
 import Layout from "../layouts/en"
 
-const SecondPage = (props) => (
+const CareersPage = (props) => (
   <Layout location={props.location}>
     <div>
       <h1>Hi from the second page</h1>
@@ -12,4 +15,5 @@ const SecondPage = (props) => (
   </Layout>
 )
 
-export default SecondPage
+export default CareersPage;
+

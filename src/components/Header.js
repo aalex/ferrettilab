@@ -3,6 +3,7 @@
  */
 import React from 'react'
 import Link from 'gatsby-link'
+import PropTypes from 'prop-types'
 import SelectLanguage from './SelectLanguage';
 import GitHubLink from './GitHubLink';
 
@@ -37,8 +38,25 @@ const Header = (props) => (
       <SelectLanguage langs={props.langs} />
     </div>
     <GitHubLink githubLink="https://github.com/cr-ste-justine/" />
+
+    {props.currentLanguage === 'en' ? (
+      <Link to="/page-2/">Go to page 2</Link>
+    ) : (
+      <Link to="/fr/page-2/">Aller vers la page 2</Link>
+    )}
   </div>
 )
+
+Header.propTypes = {
+  /** List of languages available for this site. */
+  langs: PropTypes.string,
+  /** Current selected language */
+  currentLanguage: PropTypes.string,
+};
+
+Header.defaultProps = {
+  currentLanguage: 'en',
+};
 
 export default Header;
 

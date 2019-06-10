@@ -2,6 +2,7 @@
  * @file The GitHubLink component.
  */
 import React from 'react';
+import PropTypes from 'prop-types';
 import { FaGithub } from 'react-icons/fa';
 import '../style/style.scss';
 
