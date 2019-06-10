@@ -24,7 +24,7 @@ Here is a quick reminder of our to start the development Web server:
 ```
 npm install -g gatsby-cli
 npm install
-npm develop
+npm run develop
 ```
 
 
