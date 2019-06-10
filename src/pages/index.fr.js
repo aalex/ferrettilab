@@ -8,7 +8,7 @@ const IndexPage = (props) => (
       <h1>Bonjour</h1>
       <p>Bienvenue</p>
       <p>Faites un beau truc</p>
-      <Link to="/pt/page-2/">Aller vers la page 2</Link>
+      <Link to="/fr/page-2/">Aller vers la page 2</Link>
     </div>
   </Layout>
 )

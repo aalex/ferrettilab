@@ -7,7 +7,7 @@ const SecondPage = (props) => (
     <div>
       <h1>La page deux!</h1>
       <p>Bienvenue page 2</p>
-      <Link to="/pt/">Retour</Link>
+      <Link to="/fr/">Retour</Link>
     </div>
   </Layout>
 )
