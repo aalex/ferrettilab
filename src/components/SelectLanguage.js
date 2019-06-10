@@ -1,8 +1,14 @@
+/**
+ * @file The SelectLanguage component.
+ */
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import { FormattedMessage } from 'react-intl';
 
+/**
+ * Language switcher component.
+ */
 const SelectLanguage = (props) => {
   const links = props.langs.map(lang =>
     <Link to={lang.link} key={lang.langKey} style={{
@@ -35,7 +41,11 @@ const SelectLanguage = (props) => {
 };
 
 SelectLanguage.propTypes = {
+  /**
+   * Prototype of prop "langs"
+   */
   langs: PropTypes.array
 };
 
 export default SelectLanguage;
+

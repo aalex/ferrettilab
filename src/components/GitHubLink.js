@@ -1,12 +1,19 @@
+/**
+ * @file The GitHubLink component.
+ */
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
 import '../style/style.scss';
 
-const GitHubLink = () => (
+
+/**
+ * Component for showing a link a GitHub team.
+ */
+const GitHubLink = (props) => (
   <span>
     <a
       className="button is-info is-inverted"
-      href="https://github.com/cr-ste-justine/"
+      href={props.githubLink}
     >
       <span className="icon">
         <FaGithub size="fa-2x" />
@@ -15,5 +22,12 @@ const GitHubLink = () => (
     </a>
   </span>
 );
+
+GitHubLink.propTypes = {
+  /**
+   * Prototype of prop "githubLink"
+   */
+  githubLink: PropTypes.string
+};
 
 export default GitHubLink;

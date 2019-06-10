@@ -1,8 +1,14 @@
+/**
+ * @file The Header component.
+ */
 import React from 'react'
 import Link from 'gatsby-link'
 import SelectLanguage from './SelectLanguage';
 import GitHubLink from './GitHubLink';
 
+/**
+ * The Header component - for the top part of every page of our Web site.
+ */
 const Header = (props) => (
   <div
     style={{
@@ -30,7 +36,7 @@ const Header = (props) => (
       </h1>
       <SelectLanguage langs={props.langs} />
     </div>
-    <GitHubLink />
+    <GitHubLink githubLink="https://github.com/cr-ste-justine/" />
   </div>
 )
 
