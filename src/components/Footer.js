@@ -22,8 +22,28 @@ const Footer = (props) => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <span style={{ margin: 0, marginRight: '50px', verticalAlign: 'baseline', lineHeight: '50px' }}>
+      <span style={{ marginLeft: '10px', marginRight: '10px', verticalAlign: 'baseline', lineHeight: '50px' }}>
         (c) 2019 Ferretti Labs
+      </span>
+      <span>
+        <span style={{ marginLeft: '10px', marginRight: '10px' }}>
+          Dr. Vincent Ferretti
+          <span>
+            { props.currentLanguage === 'en' ? (
+              <span>Research Center of the Sainte-Justine University Hospital</span>
+            ) : (
+              <span>Centre de recherche du CHU Sainte-Justine</span>
+            )}
+          </span>
+          <br />
+          <span style={{ marginLeft: '10px', marginRight: '10px' }}>
+            { props.currentLanguage === 'en' ? (
+              <span>3175, Côte-Sainte-Catherine, Montreal</span>
+            ) : (
+              <span>3175, rue Côte-Sainte-Catherine, Montréal</span>
+            )}
+          </span>
+        </span>
       </span>
       <GitHubLink githubLink="https://github.com/cr-ste-justine/" style={{ lineHeight: '50px', verticalAlign: 'baseline' }}  />
     </div>

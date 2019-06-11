@@ -30,6 +30,8 @@ const CareersPage = (props) => (
         </span>
       </div>
 
+      <hr />
+
       <div style={{ marginTop: '10px', }}>
         <h2>Développeurs logiciels front-end</h2>
         <p>

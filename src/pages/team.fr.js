@@ -2,7 +2,6 @@
  * @file Contents of the "team" page - in French.
  */
 import React from 'react'
-import Link from 'gatsby-link'
 import Layout from "../layouts/fr"
 import TeamMember from '../components/TeamMember';
 

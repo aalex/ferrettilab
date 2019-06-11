@@ -29,6 +29,8 @@ const CareersPage = (props) => (
         </span>
       </div>
 
+      <hr />
+
       <div style={{ marginTop: '10px', }}>
         <h2>Front-end developers</h2>
         <p>
