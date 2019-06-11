@@ -5,9 +5,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 import PropTypes from 'prop-types'
 import SelectLanguage from './SelectLanguage';
-/* import { Button } from "react-bulma-components/full";
- */
-import { Navbar } from "react-bulma-components/full";
 
 /**
  * The Header component - for the top part of every page of our Web site.
@@ -44,20 +41,20 @@ className="subtitle"
     </div>
   </section>
     <div>
-      <Navbar
+      <nav className='navbar'
         color="#ffffff"
         active='false'
         transparent='true'
       >
-        <Navbar.Brand>
-          <Navbar.Item renderAs="a" href="/">
+        <div className='navbar-brand'>
+          <a className='navbar-item' href="/">
             <img
               src="/images/logo.svg"
               alt="Logo"
               width="60"
               height="60"
             />
-          </Navbar.Item>
+          </a>
           { /* TODO
           <Navbar.Burger
             active={this.state.isOpen}
@@ -68,29 +65,28 @@ className="subtitle"
             }
           />
           TODO */}
-        </Navbar.Brand>
-        <Navbar.Menu active={true}>
+        </div>
+        <div className='navbar-menu'>
           {props.currentLanguage === 'en' ? (
-            <Navbar.Container>
-              <Navbar.Item href="/projects/">Projects</Navbar.Item>
-              <Navbar.Item href="/team/">Team</Navbar.Item>
-              <Navbar.Item href="/careers/">Careers</Navbar.Item>
-            </Navbar.Container>
+            <div className='container'>
+              <a className='navbar-item' href="/projects/">Projects</a>
+              <a className='navbar-item' href="/team/">Team</a>
+              <a className='navbar-item' href="/careers/">Careers</a>
+            </div>
           ) : (
-            <Navbar.Container>
-              <Navbar.Item href="/fr/projects/">Projets</Navbar.Item>
-              <Navbar.Item href="/fr/team/">Équipe</Navbar.Item>
-              <Navbar.Item href="/fr/careers/">Carrière</Navbar.Item>
-            </Navbar.Container>
+            <div className='container'>
+              <a className='navbar-item' href="/fr/projects/">Projets</a>
+              <a className='navbar-item' href="/fr/team/">Équipe</a>
+              <a className='navbar-item' href="/fr/careers/">Carrière</a>
+            </div>
           )}
-
-          { /*
-          <Navbar.Container position="end">
-            <Navbar.Item href="#">At the end</Navbar.Item>
-          </Navbar.Container>
-          */ }
-        </Navbar.Menu>
-      </Navbar>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" href='#'>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      </nav>
     </div>
   </header>
 )
