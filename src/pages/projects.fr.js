@@ -2,7 +2,7 @@
  * @file Contents of the "projects" page - in French.
  */
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby';
 import Layout from "../layouts/fr"
 
 const ProjectsPage = (props) => (
