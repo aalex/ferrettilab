@@ -7,9 +7,7 @@ import Layout from "../layouts/fr"
 const IndexPage = (props) => (
   <Layout location={props.location}>
     <div>
-      <h1>Bonjour</h1>
-      <p>Bienvenue</p>
-      <p>Faites un beau truc</p>
+      <p>Labo Ferretti est un groupe de recherche en infonuagique au service de la génétique.</p>
     </div>
   </Layout>
 )

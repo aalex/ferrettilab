@@ -7,9 +7,7 @@ import Layout from "../layouts/en"
 const IndexPage = (props) => (
   <Layout location={props.location}>
     <div>
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
+      <p>Ferretti Labs is a research group in big data for genetics research.</p>
     </div>
   </Layout>
 )

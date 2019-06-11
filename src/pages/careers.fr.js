@@ -8,9 +8,8 @@ import Layout from "../layouts/fr"
 const CareersPage = (props) => (
   <Layout location={props.location}>
     <div>
-      <h1>La page deux!</h1>
-      <p>Bienvenue page 2</p>
-      <Link to="/fr/">Retour</Link>
+      <h1>Carrières</h1>
+      <p>Bienvenue page carrières</p>
     </div>
   </Layout>
 )

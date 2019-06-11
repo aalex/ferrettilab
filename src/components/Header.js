@@ -72,13 +72,15 @@ className="subtitle"
         <Navbar.Menu active={true}>
           {props.currentLanguage === 'en' ? (
             <Navbar.Container>
-              <Navbar.Item href="/page-2/">page 2</Navbar.Item>
-              <Navbar.Item href="#">Second</Navbar.Item>
+              <Navbar.Item href="/projects/">Projects</Navbar.Item>
+              <Navbar.Item href="/team/">Team</Navbar.Item>
+              <Navbar.Item href="/careers/">Careers</Navbar.Item>
             </Navbar.Container>
           ) : (
             <Navbar.Container>
-              <Navbar.Item href="/fr/page-2/">page 2</Navbar.Item>
-              <Navbar.Item href="#">Second</Navbar.Item>
+              <Navbar.Item href="/fr/projects/">Projets</Navbar.Item>
+              <Navbar.Item href="/fr/team/">Équipe</Navbar.Item>
+              <Navbar.Item href="/fr/careers/">Carrière</Navbar.Item>
             </Navbar.Container>
           )}
 
