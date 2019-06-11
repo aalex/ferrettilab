@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Ferretti Labs`,
     github: 'https://github.com/cr-ste-justine',
-    siteUrl: 'cr-ste-justine.xyz',
+    siteUrl: 'http://cr-ste-justine.xyz',
     languages
   },
   plugins: [

@@ -68,17 +68,19 @@ className="subtitle"
         </div>
         <div className='navbar-menu'>
           {props.currentLanguage === 'en' ? (
-            <div className='container'>
-              <a className='navbar-item' href="/projects/">Projects</a>
-              <a className='navbar-item' href="/team/">Team</a>
-              <a className='navbar-item' href="/careers/">Careers</a>
-            </div>
+            <a className='navbar-item' href="/projects/">Projects</a>
           ) : (
-            <div className='container'>
-              <a className='navbar-item' href="/fr/projects/">Projets</a>
-              <a className='navbar-item' href="/fr/team/">Équipe</a>
-              <a className='navbar-item' href="/fr/careers/">Carrière</a>
-            </div>
+            <a className='navbar-item' href="/fr/projects/">Projets</a>
+          )}
+          {props.currentLanguage === 'en' ? (
+            <a className='navbar-item' href="/team/">Team</a>
+          ) : (
+            <a className='navbar-item' href="/fr/team/">Équipe</a>
+          )}
+          {props.currentLanguage === 'en' ? (
+            <a className='navbar-item' href="/careers/">Careers</a>
+          ) : (
+            <a className='navbar-item' href="/fr/careers/">Carrière</a>
           )}
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" href='#'>
             <span aria-hidden="true"></span>

@@ -32,6 +32,7 @@
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
+    "serve": "static -p 8000 public",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "test": "jest",
@@ -40,6 +41,7 @@
   "devDependencies": {
     "codecov": "^3.0.0",
     "jest": "^24.0.0",
+    "node-static": "^0.7.11",
     "prettier": "^1.16.1"
   },
   "jest": {
