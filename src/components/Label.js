@@ -11,8 +11,9 @@ import '../style/style.scss';
  */
 const Label = (props) => (
   <span className="tag" style={{
-    margingRight: '10px',
-    margingLeft: '10px',
+    marginRight: '10px',
+    marginLeft: '10px',
+    marginBottom: '10px',
   }}>
     { props.labelText }
   </span>
