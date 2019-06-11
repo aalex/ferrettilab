@@ -20,6 +20,17 @@ const IndexPage = (props) => (
         Center, le Centre québécois de données génomiques et le Centre québécois de génomique clinique.
       </p>
     </div>
+    <div>
+      <span class="tag is-light">données massives</span>
+      <span class="tag is-light">bioinformatique</span>
+      <span class="tag is-light">infonuagique</span>
+      <span class="tag is-light">recherche appliquée</span>
+      <span class="tag is-light">génomique</span>
+      <span class="tag is-light">génie logiciel</span>
+      <span class="tag is-light">infrastructure</span>
+      <span class="tag is-light">développement logiciel</span>
+      <span class="tag is-light">logiciel libre</span>
+    </div>
   </Layout>
 )
 
