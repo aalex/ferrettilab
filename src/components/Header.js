@@ -95,7 +95,7 @@ className="subtitle"
 
 Header.propTypes = {
   /** List of languages available for this site. */
-  langs: PropTypes.string,
+  langs: PropTypes.array,
   /** Current selected language */
   currentLanguage: PropTypes.string,
 };
