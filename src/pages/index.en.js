@@ -3,6 +3,7 @@
  */
 import React from 'react'
 import Layout from "../layouts/en"
+import Label from "../components/Label"
 
 const IndexPage = (props) => (
   <Layout location={props.location}>
@@ -19,15 +20,15 @@ const IndexPage = (props) => (
         Centre québécois de génomique clinique.
       </p>
       <div>
-        <span class="tag is-light">big data</span>
-        <span class="tag is-light">bioinformatics</span>
-        <span class="tag is-light">cloud computing</span>
-        <span class="tag is-light">applied research</span>
-        <span class="tag is-light">genomics</span>
-        <span class="tag is-light">software engineering</span>
-        <span class="tag is-light">infrastructure</span>
-        <span class="tag is-light">software development</span>
-        <span class="tag is-light">open source</span>
+        <Label labelText='big data' />
+        <Label labelText='bioinformatics' />
+        <Label labelText='cloud computing' />
+        <Label labelText='applied research' />
+        <Label labelText='genomics' />
+        <Label labelText='software engineering' />
+        <Label labelText='infrastructure' />
+        <Label labelText='software development' />
+        <Label labelText='open source' />
       </div>
     </div>
   </Layout>

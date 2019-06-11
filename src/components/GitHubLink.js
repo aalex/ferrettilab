@@ -13,7 +13,7 @@ import '../style/style.scss';
 const GitHubLink = (props) => (
   <span>
     <a
-      className="button is-info is-inverted"
+      className="button is-inverted is-small"
       href={props.githubLink}
     >
       <span className="icon">

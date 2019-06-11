@@ -3,6 +3,7 @@
  */
 import React from 'react'
 import PropTypes from 'prop-types'
+import Link from 'gatsby-link';
 import GitHubLink from './GitHubLink';
 
 /**
@@ -28,6 +29,7 @@ const Footer = (props) => (
       <span>
         <span style={{ marginLeft: '10px', marginRight: '10px' }}>
           Dr. Vincent Ferretti
+          &nbsp; 
           <span>
             { props.currentLanguage === 'en' ? (
               <span>Research Center of the Sainte-Justine University Hospital</span>
@@ -46,6 +48,8 @@ const Footer = (props) => (
         </span>
       </span>
       <GitHubLink githubLink="https://github.com/cr-ste-justine/" style={{ lineHeight: '50px', verticalAlign: 'baseline' }}  />
+      &nbsp;
+      <Link href='tel:514-345-4931,4926'>514-345-4931 #4926</Link>
     </div>
   </div>
 )
