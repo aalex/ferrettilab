@@ -4,7 +4,8 @@
 import React from 'react'
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types'
-import SelectLanguage from './SelectLanguage';
+//import SelectLanguage from './SelectLanguage';
+import LanguageSwitcher from './LanguageSwitcher';
 
 /**
  * The Header component - for the top part of every page of our Web site.
@@ -36,7 +37,8 @@ className="subtitle"
               <h2>L&apos;infonuagique au service de la recherche en génétique</h2>
             </div>
           )}
-        <SelectLanguage langs={props.langs} />
+        {/*<SelectLanguage langs={props.langs} />*/}
+        <LanguageSwitcher currentLanguage={props.currentLanguage} />
       </div>
     </div>
   </section>
