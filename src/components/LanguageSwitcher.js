@@ -11,19 +11,31 @@ import { FormattedMessage } from 'react-intl';
  */
 const LanguageSwitcher = (props) => (
   <div>
-    { props.currentLanguage === 'fr' ? (
-      <strong><a href="/fr" className="langSwitcher">Français</a></strong>
+    {props.currentLanguage === 'fr' ? (
+      <strong>
+        <a href="/fr" className="langSwitcher">
+          Français
+        </a>
+      </strong>
     ) : (
-      <a href="/fr" className="langSwitcher">Français</a>
+      <a href="/fr" className="langSwitcher">
+        Français
+      </a>
     )}
-      &nbsp; | &nbsp; 
-    { props.currentLanguage === 'en' ? (
-      <strong><a href="/" className="langSwitcher">English</a></strong>
+    &nbsp; | &nbsp;
+    {props.currentLanguage === 'en' ? (
+      <strong>
+        <a href="/" className="langSwitcher">
+          English
+        </a>
+      </strong>
     ) : (
-      <a href="/" className="langSwitcher">English</a>
+      <a href="/" className="langSwitcher">
+        English
+      </a>
     )}
   </div>
-)
+);
 
 LanguageSwitcher.propTypes = {
   /**
@@ -34,4 +46,3 @@ LanguageSwitcher.propTypes = {
 };
 
 export default LanguageSwitcher;
-

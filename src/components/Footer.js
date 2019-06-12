@@ -1,8 +1,8 @@
 /**
  * @file The Footer component.
  */
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import GitHubLink from './GitHubLink';
 
@@ -15,7 +15,8 @@ const Footer = (props) => (
       padding: '80px 0 0 0',
       marginTop: '1.45rem',
       background: '#53535',
-    }} >
+    }}
+  >
     <div
       style={{
         margin: '0 auto',
@@ -23,23 +24,31 @@ const Footer = (props) => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <span style={{ marginLeft: '10px', marginRight: '10px', verticalAlign: 'baseline', lineHeight: '50px' }}>
+      <span
+        style={{
+          marginLeft: '10px',
+          marginRight: '10px',
+          verticalAlign: 'baseline',
+          lineHeight: '50px',
+        }}
+      >
         (c) 2019 Ferretti Labs
       </span>
       <span>
         <span style={{ marginLeft: '10px', marginRight: '10px' }}>
-          Dr. Vincent Ferretti
-          &nbsp; 
+          Dr. Vincent Ferretti &nbsp;
           <span>
-            { props.currentLanguage === 'en' ? (
-              <span>Research Center of the Sainte-Justine University Hospital</span>
+            {props.currentLanguage === 'en' ? (
+              <span>
+                Research Center of the Sainte-Justine University Hospital
+              </span>
             ) : (
               <span>Centre de recherche du CHU Sainte-Justine</span>
             )}
           </span>
           <br />
           <span style={{ marginLeft: '10px', marginRight: '10px' }}>
-            { props.currentLanguage === 'en' ? (
+            {props.currentLanguage === 'en' ? (
               <span>3175, Côte-Sainte-Catherine, Montreal</span>
             ) : (
               <span>3175, rue Côte-Sainte-Catherine, Montréal</span>
@@ -47,12 +56,15 @@ const Footer = (props) => (
           </span>
         </span>
       </span>
-      <GitHubLink githubLink="https://github.com/cr-ste-justine/" style={{ lineHeight: '50px', verticalAlign: 'baseline' }}  />
+      <GitHubLink
+        githubLink="https://github.com/cr-ste-justine/"
+        style={{ lineHeight: '50px', verticalAlign: 'baseline' }}
+      />
       &nbsp;
-      <Link href='tel:514-345-4931,4926'>514-345-4931 #4926</Link>
+      <Link href="tel:514-345-4931,4926">514-345-4931 #4926</Link>
     </div>
   </div>
-)
+);
 
 Footer.propTypes = {
   /** Current selected language */
@@ -64,4 +76,3 @@ Footer.defaultProps = {
 };
 
 export default Footer;
-

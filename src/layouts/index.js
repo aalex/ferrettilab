@@ -1,16 +1,16 @@
 /**
  * @file Layout for the common part of all pages for this site.
  */
-import React from 'react'
-import PropTypes from 'prop-types'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Helmet from 'react-helmet';
 import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n';
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from 'gatsby';
 import { IntlProvider } from 'react-intl';
 import 'intl';
-import './index.css'
+import './index.css';
 
 const Layout = ({ children, location, i18nMessages }) => {
   return (
@@ -22,30 +22,41 @@ const Layout = ({ children, location, i18nMessages }) => {
               languages {
                 defaultLangKey
                 langs
-              }      
+              }
             }
           }
         }
       `}
-      render={data => {
+      render={(data) => {
         const url = location.pathname;
         const { langs, defaultLangKey } = data.site.siteMetadata.languages;
         const langKey = getCurrentLangKey(langs, defaultLangKey, url);
         const homeLink = `/${langKey}`.replace(`/${defaultLangKey}/`, '/');
         /* FIXME: The links for the language switcher should preserve the current page
          */
-        const languagesForMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url)).map((item) => ({ ...item, link: item.link.replace(`/${defaultLangKey}/`, '/') }));
+        const languagesForMenu = getLangs(
+          langs,
+          langKey,
+          getUrlForLang(homeLink, url)
+        ).map((item) => ({
+          ...item,
+          link: item.link.replace(`/${defaultLangKey}/`, '/'),
+        }));
         return (
-          <IntlProvider
-            locale={langKey}
-            messages={i18nMessages}
-          >
+          <IntlProvider locale={langKey} messages={i18nMessages}>
             <div>
               <Helmet
                 title="Ferretti Labs"
                 meta={[
-                  { name: 'description', content: 'Ferretti Labs - Groupe de recherche du docteur Vincent Ferretti' },
-                  { name: 'keywords', content: 'genomics, big data, cancer, infrastructure' },
+                  {
+                    name: 'description',
+                    content:
+                      'Ferretti Labs - Groupe de recherche du docteur Vincent Ferretti',
+                  },
+                  {
+                    name: 'keywords',
+                    content: 'genomics, big data, cancer, infrastructure',
+                  },
                 ]}
               />
 
@@ -64,7 +75,7 @@ const Layout = ({ children, location, i18nMessages }) => {
               <Footer currentLanguage={langKey} />
             </div>
           </IntlProvider>
-        )
+        );
       }}
     />
   );
@@ -72,7 +83,6 @@ const Layout = ({ children, location, i18nMessages }) => {
 
 Layout.propTypes = {
   children: PropTypes.func,
-}
+};
 
 export default Layout;
-

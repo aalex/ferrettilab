@@ -6,16 +6,12 @@ import PropTypes from 'prop-types';
 import { FaGithub } from 'react-icons/fa';
 import '../style/style.scss';
 
-
 /**
  * Component for showing a link a GitHub team.
  */
 const GitHubLink = (props) => (
   <span>
-    <a
-      className="button is-inverted is-small"
-      href={props.githubLink}
-    >
+    <a className="button is-inverted is-small" href={props.githubLink}>
       <span className="icon">
         <FaGithub size="fa-2x" />
       </span>
@@ -28,7 +24,7 @@ GitHubLink.propTypes = {
   /**
    * Prototype of prop "githubLink"
    */
-  githubLink: PropTypes.string
+  githubLink: PropTypes.string,
 };
 
 export default GitHubLink;
