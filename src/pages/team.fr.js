@@ -9,7 +9,7 @@ const TeamPage = (props) => (
   <Layout location={props.location}>
     <div>
       <h1>Équipe</h1>
-      <div>
+      <div className="columns is-multiline is-3">
         <TeamMember githubUser='vferretti' fullName='Vincent Ferretti' title='Chercheur principal' />
         <TeamMember githubUser='Emma-Drieux' fullName='Emma Drieux' title='Analyste de recherche' />
         <TeamMember githubUser='aalex' fullName='Alexandre Quessy' title='Analyste d&apos;affaires' />

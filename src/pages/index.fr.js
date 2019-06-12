@@ -9,7 +9,6 @@ const IndexPage = (props) => (
   <Layout location={props.location}>
     <div>
       <p>Le Labo Ferretti est un groupe de recherche en infonuagique au service de la génétique.</p>
-      <img src="/images/map_chusj.png" alt="map - CHU Ste-Justine" />
       <p>
         Nos activités de recherche sont axées sur le développement de méthodes et de logiciels d’analyse
         bioinformatique du génome visant à identifier et caractériser les variations génétiques responsables des
@@ -31,6 +30,9 @@ const IndexPage = (props) => (
       <Label labelText='infrastructure' />
       <Label labelText='développement logiciel' />
       <Label labelText='logiciel libre' />
+      <figure class="image">
+        <img className="is-rounded" src="/images/map_chusj.png" alt="map - CHU Ste-Justine" />
+      </figure>
     </div>
   </Layout>
 )

@@ -9,7 +9,6 @@ const IndexPage = (props) => (
   <Layout location={props.location}>
     <div>
       <p>Ferretti Labs is a research group in big data for genetics research.</p>
-      <img src="/images/map_chusj.png" alt="map - CHU Ste-Justine" />
       <p>
         Our research activities are centered on the development of methods and software for bioinformatics analysis
         of the genome aiming to identify and characterize genetic variations linked with diseases. Our team of 
@@ -30,6 +29,9 @@ const IndexPage = (props) => (
         <Label labelText='software development' />
         <Label labelText='open source' />
       </div>
+      <figure class="image">
+        <img className="is-rounded" src="/images/map_chusj.png" alt="map - CHU Ste-Justine" />
+      </figure>
     </div>
   </Layout>
 )
