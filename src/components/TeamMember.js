@@ -9,6 +9,9 @@ import '../style/style.scss';
 
 /**
  * Component for showing a link a GitHub team.
+ *
+ * @todo For some reason, there is no gap between each column.
+ * Perhaps the SASS variables for Bulma are not used?
  */
 const TeamMember = (props) => (
   <div className="box column is-half">
@@ -43,27 +46,6 @@ const TeamMember = (props) => (
   </div>
 );
 
-  {/*
-  <div style={{ marginTop: '40px', borderBottom: 'solid 1px #ccc' }}>
-    <h2>{props.fullName}</h2>
-    <div>
-      <span><em>{props.title}</em></span>
-    </div>
-    <div>
-      <span>
-        <a
-          className="button is-info is-inverted"
-          href={'https://github.com/' + props.githubUser}
-        >
-          <span className="icon">
-            <FaGithub size="fa-2x" />
-          </span>
-          <span>{props.githubUser}</span>
-        </a>
-      </span>
-    </div>
-  </div>
-  */}
 
 TeamMember.propTypes = {
   /**
