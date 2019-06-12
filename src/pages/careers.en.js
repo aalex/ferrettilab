@@ -7,9 +7,9 @@ import Layout from "../layouts/en"
 
 const CareersPage = (props) => (
   <Layout location={props.location}>
-    <div>
+    <div className='section'>
       <h1>Jobs</h1>
-      <div>
+      <div className='container'>
         <h2>Full-stack developers</h2>
         <p>
           As a Full Stack Developer, you will be participating in the development of a large scale open source cloud
@@ -31,7 +31,7 @@ const CareersPage = (props) => (
 
       <hr />
 
-      <div style={{ marginTop: '10px', }}>
+      <div className='container' style={{ marginTop: '10px', }}>
         <h2>Front-end developers</h2>
         <p>
           As a Front-end Developer, you will be participating in the development of a large scale open source cloud platform in genomics and bioinformatics for Quebec patients using top of the line frameworks to build responsive data portals and visualizations similar to <Link to="dcc.icgc.org">dcc.icgc.org</Link> and <Link to="portal.gdc.cancer.gov">portal.gdc.cancer.gov</Link>.
