@@ -1,6 +1,6 @@
 {
-  "name": "siteweb-ferrettilabs",
-  "description": "Web site for the Ferretti Labs",
+  "name": "siteweb-ferrettilab",
+  "description": "Web site for the Ferretti Lab",
   "version": "0.1.0",
   "author": "aalex",
   "dependencies": {
@@ -40,6 +40,9 @@
   },
   "devDependencies": {
     "codecov": "^3.5.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0",
+    "gatsby-plugin-eslint": "^2.0.5",
     "jest": "^24.8.0",
     "node-static": "^0.7.11",
     "prettier": "^1.18.2"

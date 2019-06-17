@@ -2,7 +2,7 @@ const languages = require('./src/data/languages');
 
 module.exports = {
   siteMetadata: {
-    title: `Ferretti Labs`,
+    title: `Ferretti Lab`,
     github: 'https://github.com/cr-ste-justine',
     siteUrl: 'http://cr-ste-justine.xyz',
     languages
