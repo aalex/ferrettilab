@@ -27,6 +27,17 @@ npm install
 npm run develop
 ```
 
+## Deployment for production
+
+```
+npm install -g gatsby-cli
+npm install
+npm run build
+npm run serve
+```
+
+Running `npm run build` should create and populate a "public" directory.
+
 
 ## Base theme
 This project has been started from the theme gatsby-starter-default-i18n.
