@@ -38,9 +38,9 @@ const Footer = (props) => (
       <span>
         <span style={{ marginLeft: '10px', marginRight: '10px' }}>
           Dr. Vincent Ferretti &nbsp;
-          <span>
+          <a href="https://recherche.chusj.org" target="blank">
            <FormattedMessage id="crsj" />
-          </span>
+          </a>
           <br />
           <span style={{ marginLeft: '10px', marginRight: '10px' }}>
            <FormattedMessage id="addresseChuSteJustine" />
@@ -67,3 +67,4 @@ Footer.defaultProps = {
 };
 
 export default Footer;
+

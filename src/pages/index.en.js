@@ -33,6 +33,9 @@ const IndexPage = (props) => (
         <Label labelText="infrastructure" />
         <Label labelText="software development" />
         <Label labelText="open source" />
+        <Label labelText="clinical genomics" />
+        <Label labelText="artificial intelligence" />
+        <Label labelText="machine learning" />
       </div>
       <figure class="image">
         <img
@@ -46,3 +49,4 @@ const IndexPage = (props) => (
 );
 
 export default IndexPage;
+

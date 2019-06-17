@@ -37,6 +37,9 @@ const IndexPage = (props) => (
       <Label labelText="infrastructure" />
       <Label labelText="développement logiciel" />
       <Label labelText="logiciel libre" />
+      <Label labelText="génomique clinique" />
+      <Label labelText="intelligence articielle" />
+      <Label labelText="apprentissage machine" />
       <figure class="image">
         <img
           className="is-rounded"
@@ -49,3 +52,4 @@ const IndexPage = (props) => (
 );
 
 export default IndexPage;
+

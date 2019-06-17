@@ -25,7 +25,8 @@ const Header = (props) => (
                   <FormattedMessage id="ferrettiLab" />
                 </h1>
               </Link>
-              <h2>Big data for genomics research</h2>
+              <h2><FormattedMessage id="crsj" /></h2>
+              <em>Big data for genomics research</em>
             </div>
           ) : (
             <div>
@@ -38,9 +39,10 @@ className="subtitle"
                   <FormattedMessage id="ferrettiLab" />
                 </h1>
               </Link>
-              <h2>
+              <h2><FormattedMessage id="crsj" /></h2>
+              <em>
                 L&apos;infonuagique au service de la recherche en génétique
-              </h2>
+              </em>
             </div>
           )}
           {/*<SelectLanguage langs={props.langs} />*/}

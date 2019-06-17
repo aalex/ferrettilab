@@ -1,6 +1,6 @@
 module.exports = {
   selectLanguage: 'Choisissez votre langue',
-  ferrettiLab: 'LaboFerretti',
+  ferrettiLab: 'Labo Ferretti',
   crsj: 'Centre de recherche du CHU Sainte-Justine',
   addresseChuSteJustine: '3175, rue Côte-Sainte-Catherine, Montréal',
 };
