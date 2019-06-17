@@ -5,6 +5,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import GitHubLink from './GitHubLink';
+import { FormattedMessage } from 'react-intl';
 
 /**
  * The Footer component - for the bottom part of every page of our Web site.
@@ -32,27 +33,17 @@ const Footer = (props) => (
           lineHeight: '50px',
         }}
       >
-        (c) 2019 Ferretti Labs
+        (c) 2019 <FormattedMessage id="ferrettiLab" />
       </span>
       <span>
         <span style={{ marginLeft: '10px', marginRight: '10px' }}>
           Dr. Vincent Ferretti &nbsp;
           <span>
-            {props.currentLanguage === 'en' ? (
-              <span>
-                Research Center of the Sainte-Justine University Hospital
-              </span>
-            ) : (
-              <span>Centre de recherche du CHU Sainte-Justine</span>
-            )}
+           <FormattedMessage id="crsj" />
           </span>
           <br />
           <span style={{ marginLeft: '10px', marginRight: '10px' }}>
-            {props.currentLanguage === 'en' ? (
-              <span>3175, Côte-Sainte-Catherine, Montreal</span>
-            ) : (
-              <span>3175, rue Côte-Sainte-Catherine, Montréal</span>
-            )}
+           <FormattedMessage id="addresseChuSteJustine" />
           </span>
         </span>
       </span>

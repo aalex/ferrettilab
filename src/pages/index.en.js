@@ -9,7 +9,7 @@ const IndexPage = (props) => (
   <Layout location={props.location}>
     <div>
       <p>
-        Ferretti Labs is a research group in big data for genetics research.
+        Ferretti Lab is a research group in big data for genetics research.
       </p>
       <p>
         Our research activities are centered on the development of methods and

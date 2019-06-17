@@ -3,7 +3,6 @@
  */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
 import { FormattedMessage } from 'react-intl';
 
 /**
@@ -12,10 +11,8 @@ import { FormattedMessage } from 'react-intl';
 const LanguageSwitcher = (props) => (
   <div>
     {props.currentLanguage === 'fr' ? (
-      <strong>
-        <a href="/fr" className="langSwitcher">
-          Français
-        </a>
+      <strong className="langSwitcher">
+        Français
       </strong>
     ) : (
       <a href="/fr" className="langSwitcher">
@@ -24,10 +21,8 @@ const LanguageSwitcher = (props) => (
     )}
     &nbsp; | &nbsp;
     {props.currentLanguage === 'en' ? (
-      <strong>
-        <a href="/" className="langSwitcher">
-          English
-        </a>
+      <strong className="langSwitcher">
+        English
       </strong>
     ) : (
       <a href="/" className="langSwitcher">
@@ -46,3 +41,4 @@ LanguageSwitcher.propTypes = {
 };
 
 export default LanguageSwitcher;
+

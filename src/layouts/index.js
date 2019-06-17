@@ -46,12 +46,12 @@ const Layout = ({ children, location, i18nMessages }) => {
           <IntlProvider locale={langKey} messages={i18nMessages}>
             <div>
               <Helmet
-                title="Ferretti Labs"
+                title="Ferretti Lab"
                 meta={[
                   {
                     name: 'description',
                     content:
-                      'Ferretti Labs - Groupe de recherche du docteur Vincent Ferretti',
+                      'Ferretti Lab - Groupe de recherche du docteur Vincent Ferretti',
                   },
                   {
                     name: 'keywords',
@@ -86,3 +86,4 @@ Layout.propTypes = {
 };
 
 export default Layout;
+

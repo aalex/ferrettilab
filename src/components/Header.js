@@ -4,8 +4,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-//import SelectLanguage from './SelectLanguage';
 import LanguageSwitcher from './LanguageSwitcher';
+import { FormattedMessage } from 'react-intl';
 
 /**
  * The Header component - for the top part of every page of our Web site.
@@ -21,7 +21,9 @@ const Header = (props) => (
                 {/*style={{ color: '#101010', textDecoration: 'none', }}>
  className="title" className="subtitle"
             */}
-                <h1>Ferretti Labs</h1>
+                <h1>
+                  <FormattedMessage id="ferrettiLab" />
+                </h1>
               </Link>
               <h2>Big data for genomics research</h2>
             </div>
@@ -32,7 +34,9 @@ const Header = (props) => (
  className="title"
 className="subtitle"
             */}
-                <h1>Labo Ferretti</h1>
+                <h1>
+                  <FormattedMessage id="ferrettiLab" />
+                </h1>
               </Link>
               <h2>
                 L&apos;infonuagique au service de la recherche en génétique
