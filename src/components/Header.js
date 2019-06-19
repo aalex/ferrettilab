@@ -80,11 +80,11 @@ className=    "subtitle"
         <div className="navbar-menu">
           {props.currentLanguage === 'en' ? (
             <a className="navbar-item" href="/projects/">
-              Projects
+              What do we do?
             </a>
           ) : (
             <a className="navbar-item" href="/fr/projects/">
-              Projets
+              Que faisons-nous&nbsp?
             </a>
           )}
           {props.currentLanguage === 'en' ? (

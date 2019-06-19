@@ -8,17 +8,19 @@ import Layout from '../layouts/en';
 const ProjectsPage = (props) => (
   <Layout location={props.location}>
     <div>
-      <h1>Projects</h1>
+      <h1>What do we do?</h1>
       <div>
         <h2>NIH Gabriella Miller Kids First Data Resource Center</h2>
+        <img src="/images/project_kidsfirst.png" />
         <p>
           The Kids First Data Resource Center (DRC) is a collaborative pediatric
           research effort created to accelerate data-driven discoveries and the
           development of novel precision-based approaches for children diagnosed
           with cancer or a structural birth defect using large genomic datasets.
         </p>
+        
         <p>
-          <Link href="https://kidsfirstdrc.org/">kidsfirstdrc.org</Link>
+          <a href="https://kidsfirstdrc.org/">kidsfirstdrc.org</a>
         </p>
       </div>
 

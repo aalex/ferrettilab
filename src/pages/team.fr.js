@@ -26,19 +26,9 @@ const TeamPage = (props) => (
           title="Analyste d'affaires"
         />
         <TeamMember
-          githubUser="nyanofthemoon"
-          fullName="Paule Lepage"
-          title="Développeur sénior"
-        />
-        <TeamMember
           githubUser="latch2112"
           fullName="Francois Lachance"
-          title="Développeur sénior"
-        />
-        <TeamMember
-          githubUser="jecos"
-          fullName="Jeremy Costanza"
-          title="Développeur sénior"
+          title="Développeur"
         />
         <TeamMember
           githubUser="jaouad-benassila"
@@ -46,14 +36,24 @@ const TeamPage = (props) => (
           title="Développeur"
         />
         <TeamMember
-          githubUser="Velythyl"
-          fullName="Charlie Gauthier"
-          title="Stagiaire"
+          githubUser="jecos"
+          fullName="Jeremy Costanza"
+          title="Développeur"
         />
         <TeamMember
           githubUser="jberube"
           fullName="Julien Bérubé"
-          title="Consultant"
+          title="Développeur"
+        />
+        <TeamMember
+          githubUser="nyanofthemoon"
+          fullName="Paule Lepage"
+          title="Développeur"
+        />
+        <TeamMember
+          githubUser="Velythyl"
+          fullName="Charlie Gauthier"
+          title="Stagiaire"
         />
       </div>
     </div>
