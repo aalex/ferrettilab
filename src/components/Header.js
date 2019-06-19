@@ -95,11 +95,11 @@ className=    "subtitle"
           )}
           {props.currentLanguage === 'en' ? (
             <a className="navbar-item" href="/team/">
-              Team
+              Our Team
             </a>
           ) : (
             <a className="navbar-item" href="/fr/team/">
-              Équipe
+              Notre équipe
             </a>
           )}
           {props.currentLanguage === 'en' ? (
@@ -109,6 +109,15 @@ className=    "subtitle"
           ) : (
             <a className="navbar-item" href="/fr/careers/">
               Joignez-vous à nous&nbsp;!
+            </a>
+          )}
+          {props.currentLanguage === 'en' ? (
+            <a className="navbar-item" href="/publications/">
+              Publications
+            </a>
+          ) : (
+            <a className="navbar-item" href="/fr/publications/">
+              Publications
             </a>
           )}
           <a
