@@ -15,38 +15,48 @@ const Header = (props) => (
     <section className="hero">
       <div className="hero-body">
         <div className="container">
-          {props.currentLanguage === 'en' ? (
-            <div>
-              <Link to="/">
-                {/*style={{ color: '#101010', textDecoration: 'none', }}>
- className="title" className="subtitle"
-            */}
-                <h1>
-                  <FormattedMessage id="ferrettiLab" />
-                </h1>
-              </Link>
-              <h2><FormattedMessage id="crsj" /></h2>
-              <em>Big data for genomics research</em>
+          <div className="columns">
+            <div className="column">
+              {props.currentLanguage === 'en' ? (
+                <div>
+                  <Link to="/">
+                    {/*style={{ color: '#101010', textDecoration: 'none', }}>
+ className    ="title" className="subtitle"
+                */}
+                    <h1>
+                      <FormattedMessage id="ferrettiLab" />
+                    </h1>
+                  </Link>
+                  <h2><FormattedMessage id="crsj" /></h2>
+                  <em>Big data for genomics research</em>
+                </div>
+              ) : (
+                <div>
+                  <Link to="/">
+                    {/*style={{ color: '#101010', textDecoration: 'none', }}>
+ className    ="title"
+className=    "subtitle"
+                */}
+                    <h1>
+                      <FormattedMessage id="ferrettiLab" />
+                    </h1>
+                  </Link>
+                  <h2><FormattedMessage id="crsj" /></h2>
+                  <em>
+                    L&apos;infonuagique au service de la recherche en génétique
+                  </em>
+                </div>
+              )}
+              {/*<SelectLanguage langs={props.langs} />*/}
+              <LanguageSwitcher currentLanguage={props.currentLanguage} />
             </div>
-          ) : (
-            <div>
-              <Link to="/">
-                {/*style={{ color: '#101010', textDecoration: 'none', }}>
- className="title"
-className="subtitle"
-            */}
-                <h1>
-                  <FormattedMessage id="ferrettiLab" />
-                </h1>
-              </Link>
-              <h2><FormattedMessage id="crsj" /></h2>
-              <em>
-                L&apos;infonuagique au service de la recherche en génétique
-              </em>
+            <div className="column">
+              <img
+                src="/images/logo-chu-ste-justine.svg"
+                width="345" height="170"
+                />
             </div>
-          )}
-          {/*<SelectLanguage langs={props.langs} />*/}
-          <LanguageSwitcher currentLanguage={props.currentLanguage} />
+          </div>
         </div>
       </div>
     </section>
