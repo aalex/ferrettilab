@@ -4,62 +4,66 @@
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
 
+/*
 .gradientBg {
-	display: flex;
-	background: linear-gradient(to right, $primary-color, $secondary-color);
+  display: flex;
+  background: linear-gradient(to right, $primary-color, $secondary-color);
 }
+*/
 
+/*
 .center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+*/
 
 .footer {
-	display: flex;
-	padding: 1.5rem 1.5rem;
-	line-height: 1.5rem;
-	a {
-		border-bottom: 1px solid;
-		color: black;
-	}
-	a:hover {
-		color: $secondary-color;
-	}
+  display: flex;
+  padding: 1.5rem 1.5rem;
+  line-height: 1.5rem;
+  a {
+    border-bottom: 1px solid;
+    color: black;
+  }
+  a:hover {
+    color: $secondary-color;
+  }
 }
 
-
-/*    Hero    */
+/* Hero */
 .hero {
-	width: 100%;
-	height: 400px;
-	background: url('/images/hero.jpg') no-repeat 50% 50%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	   background-size: cover;
+  width: 100%;
+  height: 300px;
+  /* background: url('/images/hero.jpg') no-repeat 50% 50%; */
+  background: url('/images/ferretti-banner-half.jpg') no-repeat 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .hero .caption {
-	margin-top: 140px;
+  margin-top: 100px;
 }
 
 .hero h1 {
-	font-family: "lato-black", Helvetica, Arial, sans-serif;
-	font-size: 32px;
-	color: #fff;
-	text-transform: uppercase;
-	/* line-height: 70px; */
+  font-family: "lato-black", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  color: #fff;
+  /* text-transform: uppercase; */
+  /* line-height: 70px; */
 }
 
 .hero h2 {
-	font-family: "lato-light", Helvetica, Arial, sans-serif;
-	font-weight: lighter;
-	font-size: 24px;
-	color: #fff;
-	/* text-transform: uppercase; */
-	line-height: 70px;
-	margin-bottom: 50px;
+  font-family: "lato-light", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 24px;
+  color: #fff;
+  /* text-transform: uppercase; */
+  /* line-height: 70px; */
+  margin-bottom: 30px;
 }
 
 .hero {
@@ -70,7 +74,9 @@
 .langSwitcher {
   color: #fff;
 }
+
 a.langSwitcher:hover {
-  color: #ccc;
+  /* color: #ccc; */
+  color: $secondary-color;
 }
 
