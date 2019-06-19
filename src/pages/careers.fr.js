@@ -4,6 +4,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../layouts/fr';
+import Label from '../components/Label';
 
 const CareersPage = (props) => (
   <Layout location={props.location}>
@@ -57,6 +58,26 @@ const CareersPage = (props) => (
         </span>
       </div>
     </div>
+
+    <div>
+      <Label labelText="Docker" />
+      <Label labelText="ElasticSearch" />
+      <Label labelText="GraphQL" />
+      <Label labelText="JWT" />
+      <Label labelText="Java" />
+      <Label labelText="NodeJS" />
+      <Label labelText="PostgreSQL" />
+      <Label labelText="REST" />
+      <Label labelText="React" />
+      <Label labelText="Scala" />
+      <Label labelText="Scrum" />
+      <Label labelText="Spring" />
+      <Label labelText="Tesseract" />
+      <Label labelText="TypeScript" />
+      <Label labelText="npm" />
+    </div>
+
+
   </Layout>
 );
 
