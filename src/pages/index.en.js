@@ -12,16 +12,12 @@ const IndexPage = (props) => (
         Ferretti Lab is a research group in big data for genetics research.
       </p>
       <p>
-        Our research activities are centered on the development of methods and
-        software for bioinformatics analysis of the genome aiming to identify
-        and characterize genetic variations linked with diseases. Our team of
-        bioinformaticians and software engineers apply modern information
-        technology for analyzing big data for genommics research. We develop
-        tools and advanced processing software for data vizualization and cloud
-        computing platforms. We work on building many infrastructure projects
-        for research and clinical use, namely the NIH Gabriella Miller Kids
-        First Data Resource Center, the Centre québécois de données génomiques
-        and the Centre québécois de génomique clinique.
+        We write software for 
+        bioinformatics analysis of the genome aiming to identify
+        and characterize genetic variations linked with diseases.
+        Our team of bioinformaticians and software engineers apply 
+        modern information technology for analyzing big data for genomics
+        research.
       </p>
       <div>
         <Label labelText="big data" />
