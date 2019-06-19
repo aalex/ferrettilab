@@ -98,11 +98,11 @@ className=    "subtitle"
           )}
           {props.currentLanguage === 'en' ? (
             <a className="navbar-item" href="/careers/">
-              Careers
+              Join us!
             </a>
           ) : (
             <a className="navbar-item" href="/fr/careers/">
-              Carrière
+              Joignez-vous à nous&nbsp;!
             </a>
           )}
           <a

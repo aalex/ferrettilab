@@ -8,7 +8,7 @@ import Layout from '../layouts/en';
 const CareersPage = (props) => (
   <Layout location={props.location}>
     <div className="section">
-      <h1>Jobs</h1>
+      <h1>We are hiring!</h1>
       <div className="container">
         <h2>Full-stack developers</h2>
         <p>
