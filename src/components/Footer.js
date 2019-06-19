@@ -33,7 +33,7 @@ const Footer = (props) => (
           lineHeight: '50px',
         }}
       >
-        (c) 2019 <FormattedMessage id="ferrettiLab" />
+        &copy; 2019 <FormattedMessage id="ferrettiLab" />
       </span>
       <span>
         <span style={{ marginLeft: '10px', marginRight: '10px' }}>
@@ -52,7 +52,7 @@ const Footer = (props) => (
         style={{ lineHeight: '50px', verticalAlign: 'baseline' }}
       />
       &nbsp;
-      <Link href="tel:514-345-4931,4926">514-345-4931 #4926</Link>
+      <a href="tel:514-345-4931,4926">514-345-4931 #4926</a>
     </div>
   </div>
 );
