@@ -44,12 +44,15 @@ const IndexPage = (props) => (
         <Label labelText="apprentissage machine" />
       </div>
 
-      <figure class="image">
-        <img
-          className="is-rounded"
-          src="/images/map_chusj.png"
-          alt="map - CHU Ste-Justine"
-        />
+      <figure className="image">
+        <a target="_blank" href="https://goo.gl/maps/gERNfcR5uN8F6Nk68">
+          <img
+            className="is-rounded"
+            style={{height: '50%', width: '50%', }}
+            src="/images/map_chusj.png"
+            alt="map - CHU Ste-Justine"
+          />
+        </a>
       </figure>
     </div>
   </Layout>
