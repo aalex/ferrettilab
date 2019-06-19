@@ -63,9 +63,15 @@ className=    "subtitle"
     <div>
       <nav className="navbar" color="#ffffff" active="false" transparent="true">
         <div className="navbar-brand">
-          <a className="navbar-item" href="/">
-            <img src="/images/logo.svg" alt="Logo" width="60" height="60" />
-          </a>
+          {props.currentLanguage === 'en' ? (
+            <a className="navbar-item" href="/">
+              <img src="/images/logo.svg" alt="Logo" width="60" height="60" />
+            </a>
+          ) : (
+            <a className="navbar-item" href="/fr/">
+              <img src="/images/logo.svg" alt="Logo" width="60" height="60" />
+            </a>
+          )}
           {/* TODO
           <Navbar.Burger
             active={this.state.isOpen}
@@ -84,7 +90,7 @@ className=    "subtitle"
             </a>
           ) : (
             <a className="navbar-item" href="/fr/projects/">
-              Que faisons-nous&nbsp?
+              Que faisons-nous&nbsp;?
             </a>
           )}
           {props.currentLanguage === 'en' ? (

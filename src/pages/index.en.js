@@ -8,6 +8,13 @@ import Label from '../components/Label';
 const IndexPage = (props) => (
   <Layout location={props.location}>
     <div>
+
+      <div className="notification">
+        <a href="/careers" style={{ textDecoration: 'none' }}>
+          We are hiring!
+        </a>
+      </div>
+
       <p>
         Ferretti Lab is a research group in big data for genetics research.
       </p>
@@ -19,6 +26,9 @@ const IndexPage = (props) => (
         modern information technology for analyzing big data for genomics
         research.
       </p>
+    </div>
+
+    <div>
       <div>
         <Label labelText="big data" />
         <Label labelText="bioinformatics" />
@@ -33,6 +43,7 @@ const IndexPage = (props) => (
         <Label labelText="artificial intelligence" />
         <Label labelText="machine learning" />
       </div>
+
       <figure class="image">
         <img
           className="is-rounded"
