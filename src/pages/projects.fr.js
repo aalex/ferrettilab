@@ -8,7 +8,7 @@ import Layout from '../layouts/fr';
 const ProjectsPage = (props) => (
   <Layout location={props.location}>
     <div>
-      <h1>Sur quoi travaillons-nous&nbsp?</h1>
+      <h1>Sur quoi travaillons-nous&nbsp;?</h1>
       <div>
         <h2>NIH Gabriella Miller Kids First Data Resource Center</h2>
         <img src="/images/project_kidsfirst.png" />
