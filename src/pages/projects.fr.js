@@ -9,8 +9,9 @@ const ProjectsPage = (props) => (
   <Layout location={props.location}>
     <div>
       <h1>Sur quoi travaillons-nous&nbsp;?</h1>
+      <h2>Projets en cours</h2>
       <div>
-        <h2>NIH Gabriella Miller Kids First Data Resource Center</h2>
+        <h3>NIH Gabriella Miller Kids First Data Resource Center</h3>
         <img src="/images/project_kidsfirst.png" />
         <p>
           The Kids First Data Resource Center (DRC) is a collaborative pediatric
@@ -24,7 +25,7 @@ const ProjectsPage = (props) => (
       </div>
 
       <div>
-        <h2>Centre québécois de données génomiques</h2>
+        <h3>Centre québécois de données génomiques</h3>
         <p>
           Le centre québécois de données génomiques (CQDG) vise à offrir une
           infrastructure infonuagique robuste et sécuritaire pour l’hébergement
@@ -34,7 +35,7 @@ const ProjectsPage = (props) => (
       </div>
 
       <div>
-        <h2>Centre québécois de génomique clinique</h2>
+        <h3>Centre québécois de génomique clinique</h3>
         <p>
           Le centre québécois de génomique clinique (CQGC) vise à offrir une
           infrastructure infonuagique robuste et sécuritaire pour l’hébergement
@@ -42,6 +43,15 @@ const ProjectsPage = (props) => (
           de recherche en génomique au Québec.
         </p>
       </div>
+
+      <hr />
+      
+      <h2>Anciens projets</h2>
+      <ul>
+        <li><a href="https://dcc.icgc.org/">The ICGC Data Portal</a></li>
+        <li><a href="https://cancercollaboratory.org/">The Cancer Genome Collaboratory</a></li>
+      </ul>
+
     </div>
   </Layout>
 );
