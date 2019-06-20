@@ -23,19 +23,23 @@ const CareersPage = (props) => (
           en utilisant des technologies <em>big data</em> telles que
           ElasticSearch et Spark.
         </p>
-        <span style={{ marginRight: '10px' }}>
-          <Link to="https://www.jobboom.com/en/job-description/digital-technology-and-media/developpeur-full-stack/montreal-region/centre-de-recherche-du-chu-ste-justine/2594983">
-            Voir l&apos;offre complète.
-          </Link>
-        </span>
-        <span>
-          <Link to="https://github.com/cr-ste-justine/coding-challenge-fullstack">
-            Prendre le <em>coding challenge</em>
-          </Link>
-        </span>
+
+        <div className="columns">
+          <div className="column">
+            <a href="https://www.jobboom.com/en/job-description/digital-technology-and-media/developpeur-full-stack/montreal-region/centre-de-recherche-du-chu-ste-justine/2594983">
+              Voir l&apos;offre complète.
+            </a>
+          </div>
+          <div className="column">
+            <a href="https://github.com/cr-ste-justine/coding-challenge-fullstack">
+              Prendre le <em>coding challenge</em>
+            </a>
+          </div>
+        </div>
+
       </div>
 
-      <hr />
+      <hr style={{ marginTop: '20px',}} />
 
       <div className="container" style={{ marginTop: '10px' }}>
         <h2>Développeurs logiciels front-end</h2>
@@ -43,20 +47,28 @@ const CareersPage = (props) => (
           En tant que développeur logiciel front-end, vous participerez au
           développement de portails de données massives
           <em>open source</em>, et de visualisation de données semblables à{' '}
-          <Link to="dcc.icgc.org">dcc.icgc.org</Link> et{' '}
-          <Link to="portal.gdc.cancer.gov">portal.gdc.cancer.gov</Link>.
+          <a href="dcc.icgc.org">dcc.icgc.org</a> et{' '}
+          <a href="portal.gdc.cancer.gov">portal.gdc.cancer.gov</a>.
         </p>
-        <span style={{ marginRight: '10px' }}>
-          <Link to="https://www.jobboom.com/en/job-description/digital-technology-and-media/intermediate-senior-front-end-developer/montreal-region/centre-de-recherche-du-chu-ste-justine/2594994">
-            Voir l&apos;offre complète.
-          </Link>
-        </span>
-        <span>
-          <Link to="https://github.com/cr-ste-justine/coding-challenge-frontend">
-            Prendre le <em>coding challenge</em>
-          </Link>
-        </span>
+
+        <div className="columns">
+          <div className="column">
+            <a href="https://www.jobboom.com/en/job-description/digital-technology-and-media/intermediate-senior-front-end-developer/montreal-region/centre-de-recherche-du-chu-ste-justine/2594994">
+              See full job posting
+              Voir l&apos;offre complète.
+            </a>
+          </div>
+          <div className="column">
+            <a href="https://github.com/cr-ste-justine/coding-challenge-frontend">
+              Prendre le <em>coding challenge</em>
+            </a>
+          </div>
+        </div>
+
+      <hr style={{ marginTop: '20px',}} />
+
       </div>
+
     </div>
 
     <div>
@@ -76,7 +88,6 @@ const CareersPage = (props) => (
       <Label labelText="TypeScript" />
       <Label labelText="npm" />
     </div>
-
 
   </Layout>
 );
