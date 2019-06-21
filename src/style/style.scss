@@ -32,6 +32,19 @@
   }
 }
 
+.navHolder {
+  text-align: center;
+}
+
+.navHolder > div {
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.navHolder > div > a {
+}
+
 /* Hero */
 .hero {
   width: 100%;

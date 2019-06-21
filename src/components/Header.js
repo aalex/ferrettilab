@@ -15,7 +15,7 @@ const Header = (props) => (
     <section className="hero">
       <div className="hero-body">
         <div className="container">
-          <div className="columns">
+          <div className="columns is-mobile">
             <div className="column">
               {props.currentLanguage === 'en' ? (
                 <div>
@@ -72,16 +72,21 @@ className=    "subtitle"
               <img src="/images/logo.svg" alt="Logo" width="60" height="60" />
             </a>
           )}
-          {/* TODO
-          <Navbar.Burger
-            active={this.state.isOpen}
-            onClick={() =>
-              this.setState(this.state) => {
-                isOpen: ! this.state.isOpen;
-              })
-            }
-          />
-          TODO */}
+          <a
+            role="button"
+            className="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            href="#"
+            onClick={ () => { //https://github.com/jgthms/bulma/issues/238#issuecomment-275894105
+              document.querySelector(".navbar-burger").classList.toggle("is-active");
+              document.querySelector(".navbar-menu").classList.toggle("is-active");
+            }}
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
         <div className="navbar-menu">
           {props.currentLanguage === 'en' ? (
@@ -120,17 +125,7 @@ className=    "subtitle"
               Publications
             </a>
           )}
-          <a
-            role="button"
-            class="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            href="#"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+
         </div>
       </nav>
     </div>
