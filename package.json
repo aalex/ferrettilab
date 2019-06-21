@@ -32,7 +32,7 @@
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
-    "serve": "static -p 8000 public",
+    "serve": "static -p 8080 public",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --arrow-parens always --end-of-line lf --single-quote --write 'src/**/*.js'",
     "test": "jest",
