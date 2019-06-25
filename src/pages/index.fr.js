@@ -4,7 +4,6 @@
 import React from 'react';
 import Layout from '../layouts/fr';
 import Label from '../components/Label';
-import Carousel from '../components/Carousel';
 
 const IndexPage = (props) => (
   <Layout location={props.location}>
@@ -28,8 +27,6 @@ const IndexPage = (props) => (
         la recherche en génomique.
       </p>
     </div>
-
-    <Carousel displayTime={1500} animationTime={500} images={["/images/project_clin.png", "/images/project_CQDG.png", "/images/project_ICGC.png", "/images/project_kidsfirst.png"]}/>
 
     <div>
       <div>
