@@ -29,8 +29,9 @@ const IndexPage = (props) => (
       </p>
     </div>
 
+    {/*
     <Carousel displayTime={5500} animationTime={2500} images={["/images/project_clin.png", "/images/project_CQDG.png", "/images/project_ICGC.png", "/images/project_kidsfirst.png"]}/>
-
+    */}
     <div>
       <div>
         <Label labelText="données massives" />
